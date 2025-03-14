@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - CV Cá Nhân</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #3498db, #9b59b6);
+            color: white;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(15px);
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 250px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            border-radius: 50%;
+            max-width: 100px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .card p {
+            margin: 10px 0;
+            font-size: 1.2em;
+            line-height: 1.4;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            color: white;
+            background: #ff7eb3;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+            text-align: center;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background: #ff4e88;
+            transform: translateY(-5px);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .card {
+                height: auto;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Card for Vu Hoang Phat -->
+        <div class="card">
+            <img src="./assets/images/Phat.jpg" alt="Avatar">
+            <h3>Vu Hoang Phat</h3>
+            <p>Kỹ sư phần mềm, yêu thích lập trình và phát triển game</p>
+            <a href="./students/VuHoangPhat.html" class="btn">Xem CV Phát</a>
+        </div>
+
+        <!-- Card for Dinh Thu Phuong -->
+        <div class="card">
+            <img src="./assets/images/z6382294422823_707cbf5f5711c160fbcf848f733931ce.jpg" alt="Avatar">
+            <h3>Dinh Thu Phuong</h3>
+            <p>Lập trình viên Full Stack, yêu thích phát triển web và ứng dụng</p>
+            <a href="./students/DinhThuPhuong.html" class="btn">Xem CV Phương</a>
+        </div>
+
+        <!-- Card for Le Huynh Duc -->
+        <div class="card">
+            <img src="./assets/images/CAT.jpg" alt="Avatar">
+            <h3>Le Huynh Duc</h3>
+            <p>Lập trình viên và thiết kế UI/UX, đam mê công nghệ và học hỏi</p>
+            <a href="./students/LeHuynhDuc.html" class="btn">Xem CV Đức</a>
+        </div>
+
+        <!-- Card for Le Van C -->
+        <div class="card">
+            <img src="./assets/images/Untitled.png" alt="Avatar">
+            <h3>Vũ Hoàng MinhMinh</h3>
+            <p>Chuyên gia phân tích dữ liệu, đam mê học AI và ML</p>
+            <a href="./students/VuHoangMinh.html" class="btn">Xem CV Vũ Hoàng Minh</a>
+        </div>
+    </div>
+</body>
+</html>
