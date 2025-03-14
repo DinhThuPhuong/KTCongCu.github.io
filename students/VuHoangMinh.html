@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Cá Nhân - Vũ Hoàng Minh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .navbar {
+            background: #333;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: yellow;
+        }
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        h1 {
+            color: #333;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Thông tin cá nhân</a>
+        <a href="#education">Quá trình học tập</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#projects">Dự án</a>
+        <a href="#contact">Liên hệ</a>
+    </div>
+    <div class="container" id="home">
+        <img src="../assets/images/Untitled.png" alt="Ảnh cá nhân">
+        <h1>Xin chào! Tôi là Vũ Hoàng Minh</h1>
+        <p>Sinh viên năm 4 ngành Công Nghệ Phần Mềm.</p>
+    </div>
+    <div class="section" id="about">
+        <h2>Thông tin cá nhân</h2>
+        <p>Họ tên: Vũ Hoàng Minh</p>
+        <p>Định hướng nghề nghiệp: Trở thành lập trình viên Frontend.</p>
+    </div>
+    <div class="section" id="education">
+        <h2>Quá trình học tập</h2>
+        <div class="card">
+            <p>Mô tả các môn học quan trọng và dự án thực hiện.</p>
+        </div>
+    </div>
+    <div class="section" id="skills">
+        <h2>Kỹ năng</h2>
+        <div class="card">
+            <p><strong>Lập trình:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Phân tích và giải quyết vấn đề</strong></p>
+        </div>
+    </div>
+    <div class="section" id="projects">
+        <h2>Dự án cá nhân</h2>
+        <div class="card">
+            <p>Danh sách các dự án đã thực hiện.</p>
+        </div>
+    </div>
+    <div class="section" id="contact">
+        <h2>Liên hệ</h2>
+        <p>Email: [Email của bạn]</p>
+        <p>LinkedIn | GitHub | CV nếu có.</p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".navbar a").forEach(link => {
+                link.addEventListener("mouseover", function () {
+                    this.style.color = "yellow";
+                });
+                link.addEventListener("mouseout", function () {
+                    this.style.color = "white";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
