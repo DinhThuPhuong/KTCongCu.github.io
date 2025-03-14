@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu nghề nghiệp</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+        .intro, .skills, .projects, .contact {
+            padding: 40px 20px;
+            background-color: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .intro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile {
+            margin-right: 40px;
+        }
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .details h2, .skills h2, .projects h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .details p, .skills ul li, .project p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .skills ul {
+            list-style: none;
+        }
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .project {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact {
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <section class="intro">
+        <div class="profile">
+            <img src="../assets/images/CAT.jpg" alt="Ảnh cá nhân">
+        </div>
+        <div class="details">
+            <h2>Chào bạn, tôi là Lê Huỳnh Đức</h2>
+            <p>Tôi là sinh viên năm tư ngành Công nghệ thông tin, lớp 21DTHE5 tại trường Đại học HUTECH.</p>
+            <p>Với đam mê lập trình và phát triển phần mềm, tôi luôn tìm kiếm cơ hội để học hỏi và áp dụng kiến thức vào các dự án thực tế.</p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Kỹ năng cá nhân</h2>
+        <ul>
+            <li><strong>Ngôn ngữ lập trình:</strong> Java, Python, JavaScript, PHP</li>
+            <li><strong>Web development:</strong> HTML, CSS, JavaScript, ReactJS, Node.js</li>
+            <li><strong>Quản lý cơ sở dữ liệu:</strong> MySQL, MongoDB</li>
+            <li><strong>Frameworks:</strong> Spring, Express.js</li>
+            <li><strong>Công cụ phát triển:</strong> Git, Docker, Visual Studio Code, IntelliJ IDEA</li>
+            <li><strong>Phát triển phần mềm:</strong> Agile, Scrum</li>
+            <li><strong>Kỹ năng giải quyết vấn đề:</strong> Phân tích và giải quyết vấn đề logic</li>
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h2>Đồ án tôi đã thực hiện</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Đồ án 1: Quản lý thư viện</h3>
+                <p>Ứng dụng quản lý thông tin sách, mượn trả sách, và báo cáo thống kê dành cho các thư viện. Được xây dựng với ngôn ngữ Java và cơ sở dữ liệu MySQL.</p>
+            </div>
+            <div class="project">
+                <h3>Đồ án 2: Hệ thống bán hàng trực tuyến</h3>
+                <p>Hệ thống bán hàng trực tuyến với các tính năng giỏ hàng, thanh toán và quản lý kho. Được phát triển bằng PHP và MySQL, tích hợp với các công cụ thanh toán trực tuyến.</p>
+            </div>
+            <div class="project">
+                <h3>Đồ án 3: Ứng dụng quản lý công việc</h3>
+                <p>Ứng dụng giúp người dùng quản lý các công việc, lên kế hoạch và theo dõi tiến độ. Được xây dựng bằng ReactJS và Firebase cho phần backend.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Thông tin liên hệ</h2>
+        <p>Địa chỉ: TP Thủ Đức, TP HCM</p>
+        <p>Email: <a href="mailto:ducle1602@gmail.com">ducle1602@gmail.com</a></p>
+    </section>
+
+    
+</body>
+</html>
